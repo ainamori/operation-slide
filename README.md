@@ -2,7 +2,7 @@
 
 ## Install jupyter notebook
 
-```python
+```bash
 $ pip install juypter
 $ pip install RISE
 ```
