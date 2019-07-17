@@ -13269,24 +13269,7 @@ a.anchor-link {
     </table>
 </div>
 </div>
-</div><aside class="notes">
-# 自己紹介
-
-簡単に経歴を紹介。
-2008年にIIJ入社以来、主に動画配信サービスを担当。
-その後2015年に諸般の事情でUS駐在員として出向。4年間をカリフォルニア/サンノゼ
-いわゆるシリコンバレーで過ごす
-
-### 主な業務内容
-
-4年間でやった仕事と言えば。
-
-- データセンタ作業
-- 現地SI作業/運用オペレーション
-- Webアプリ開発
-
-
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13313,16 +13296,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div><aside class="notes">
-# 今回のお話
-
-インシデント・障害事例紹介。
-ということで我々が日常的に遭遇する事案について
-障害はともかくどのような物をインシデントとして取り上げるべきか念のため辞書を引いてみました。
-それがこちら。
-
-今回はUSでの経験談としてのインシデント・障害事例をいくつかご紹介いたします。
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13337,37 +13311,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div><aside class="notes">
-# 冒頭
-
-アメリカでも日本でも運用エンジニアが行う仕事内容について大きな違いはありません。
-目標・納期に合わせてシステムを作り、滞りなく運用する。
-その為に必要となるプロセスは調達・構築・監視・保守と言った物がありますが
-これらの言葉や概念について説明が必要になることはありません。
-
-では、日本とアメリカで遭遇する事で最も多いケース
-少ないケースとは何でしょうか。それがこちらです。
-
-## 遭遇する最も多いケース
-
-- 調達・納品/日時調整
-  - アメリカは個人主義、職務分掌が明確、とも言いますが
-　　個人の責任範囲とそれ以外の範囲について明確に態度・対応が異なります。
-　　従って、納品・作業日時・内容については企業担当者では無く
-    当事者との間で明確に意思疎通ができていないと命取りになります。
-    こちらは具体的な事例をともにご紹介いたします。
-
-
-## 遭遇する最も少ないケース
-
-逆に言えば、意思決定の待ち時間が長い。ということは殆どありません。
-それぞれの担当が自分の範囲に対して権限を持っているため即答ができるのがアメリカのよいところです。
-ただし、「俺にはわからない。上位エンジニアにエスカレーションしろ」
-というようにすぐに「No」というのも特徴の一つ。
-従って、待機についても明確に指示を出さないと
-気づいたら作業に来ていたはずのエンジニアが業務完了前に帰ってしまう事すらあります。
-    
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13390,28 +13334,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div><aside class="notes">
-# インシデント例1
-
-では、具体例を見てみましょう。
-時間通りに人・物が来ない。は日常茶飯事なので
-現場作業は常に緊張を強いられます。
-
-今回ご紹介する最も緊張したケースは
-シアトルへ出張した時の話です。
-我々はシアトルにもデータセンタを置き、バックボーン設備を有しているのですが
-シアトルにはオフィスが無いため、作業の際は出張作業となります。
-また、この時はリプレース作業を予定していた為、日本からも出張者が来て行う共同作業でした。
-
-・・・が、そのリプレース時に必要となるケーブルの収容変更を依頼した
-データセンタエンジニアの作業日確定（確約が）いつまで経っても来ません。
-アカウント担当とは定期的に打ち合わせを行っていることもあり
-1ヶ月以上前から予定を伝えているのにこのような有様。
-月曜作業だというのに前週の金曜でも連絡が来ないということで
-日本からの出張組には出張申請はおろかキャンセル通知すら危ぶまれる状況でした。
-幸い、土曜日に確定の回答が返ってきたので事なきを得ましたが
-言い換えれば土曜日にも関わらず連絡を取り続けなければならない、という事態だったという事になります。
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13431,26 +13354,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div><aside class="notes">
-# インシデント例2
-
-こちらは設定漏れ・設定ミスのケース。
-こちらもUSでは日常茶飯事です。
-回線開通調整で「工事完了」という連絡が来たからといって
-それだけで信用することは決してできません。
-
-工事完了といいながら光すら来ていないこともあります。
-曰く「相手が繋がっていないから確認できなかった」ハードループを作って
-自分の担当範囲は万全だ、という確証を得てから工事完了する、という文化はありません。
-彼らの言う「工事完了」とは「工事完了したから確認してくれ、何か問題があったら連絡をくれ。即座に直すから」です。
-従って、Tx/Rxが逆、ということも日常茶飯事。
-VLAN IDが異なることで光は来ているが通信ができない、ということも日常的に発生します。
-
-この時の連絡は「光が来ていない・通信ができない」では通じず
-「この地点でハードループを作ってくれ、こちらはここまでハードループを作って正常であることを確認している」と伝えたり
-「こちらが要求しているVLAND IDはxxだ。そちらは同じようになっているか？」と聞く必要があります。
-先に情報をくれる、というケースも非常に少ないのです。
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13469,24 +13373,7 @@ VLAN IDが異なることで光は来ているが通信ができない、とい�
 
 </div>
 </div>
-</div><aside class="notes">
-# 障害事例1
-
-続いて実際にそれらが障害に結びついたケースです。
-回線開通作業をした時のこと。USでは未だT1回線を使われているケースが多く存在します。
-従ってかなり低いレイヤでの問題も数多く発生。
-今回ご紹介する事例はレイヤ1の配線工事で発生しました。
-
-新たにT1回線を追加するということで工事が完了したというから現地に赴いたところ
-疎通はおろかリンクアップすらしない。加えて同一フロアの顧客からはIP電話が不通になったとの連絡。
-
-なぜかと思って切り分け作業を行った結果わかったことは混線によるものでした。
-T1回線は、RJ48のUTPケーブルを利用するのですが100M Ether同様、8本あるケーブルのうち4本しか通信には使用しません。
-RJ45/RJ48といったJackで受けるのが通常の我々は意識することが殆どありませんが
-ビルの配電盤は1本1本をネジ止めして固定するため、4本しか作業をしない事が殆どです。
-
-従って今回はこの4本が、既存のT1回線の”使われていない方の4本”に繋げてしまったために発生しました。
-</aside>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13505,18 +13392,7 @@ RJ45/RJ48といったJackで受けるのが通常の我々は意識すること�
 
 </div>
 </div>
-</div><aside class="notes">
-# 障害事例2
-
-続いての障害事例は言葉としてはよく聞くファイバーカット。
-リプレースだと言っていざPPからケーブルを引き抜いた途端に
-アラートが発生し、連絡を受けたところ「通信が止まった」との事。
-
-解体対象だと思ってケーブル撤去を始めたら実はまだ通信が残っていた
-というケースです。
-
-
-</aside></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
