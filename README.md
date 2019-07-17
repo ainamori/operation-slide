@@ -1,3 +1,12 @@
+# How to create
+
+## Install jupyter notebook
+
+$ pip install juypter
+$ pip install RISE
+
+## Create a document
+
 # Create Sslide for HTML
 
 $ jupyter nbconvert "SlideforDCOPE_20190719.ipynb" --to slides --r
