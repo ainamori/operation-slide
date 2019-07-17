@@ -16,8 +16,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="eveal-prefix/css/reveal.css">
+<link rel="stylesheet" href="eveal-prefix/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -25,14 +25,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/print/pdf.css';
+        link.href = 'eveal-prefix/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/html5shiv.js"></script>
+<script src="eveal-prefix/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13270,33 +13270,22 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# 自己紹介
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 自己紹介</span>
+簡単に経歴を紹介。
+2008年にIIJ入社以来、主に動画配信サービスを担当。
+その後2015年に諸般の事情でUS駐在員として出向。4年間をカリフォルニア/サンノゼ
+いわゆるシリコンバレーで過ごす
 
-<span class="n">簡単に経歴を紹介</span><span class="err">。</span>
-<span class="mi">2008</span><span class="n">年にIIJ入社以来</span><span class="err">、</span><span class="n">主に動画配信サービスを担当</span><span class="err">。</span>
-<span class="n">その後2015年に諸般の事情でUS駐在員として出向</span><span class="err">。</span><span class="mi">4</span><span class="n">年間をカリフォルニア</span><span class="o">/</span><span class="n">サンノゼ</span>
-<span class="n">いわゆるシリコンバレーで過ごす</span>
+### 主な業務内容
 
-<span class="c1">### 主な業務内容</span>
+4年間でやった仕事と言えば。
 
-<span class="mi">4</span><span class="n">年間でやった仕事と言えば</span><span class="err">。</span>
+- データセンタ作業
+- 現地SI作業/運用オペレーション
+- Webアプリ開発
 
-<span class="o">-</span> <span class="n">データセンタ作業</span>
-<span class="o">-</span> <span class="n">現地SI作業</span><span class="o">/</span><span class="n">運用オペレーション</span>
-<span class="o">-</span> <span class="n">Webアプリ開発</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13311,32 +13300,28 @@ a.anchor-link {
 </ul>
 </li>
 </ul>
-<h2 id="In-California-(US).">In California (US).<a class="anchor-link" href="#In-California-(US).">&#182;</a></h2><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/195px-Flag_of_California.svg.png" alt="Califonia" /></p><p>wikipedia</p>
+<h2 id="In-California-(US).">In California (US).<a class="anchor-link" href="#In-California-(US).">&#182;</a></h2><table>
+    <tr>
+        <td>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/292px-Flag_of_the_United_States_%28Pantone%29.svg.png" /></p> 
+        </td>
+<td>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/195px-Flag_of_California.svg.png" alt="Califonia" /></p> 
+        </td>
+    </tr>
+    </table><p>wikipedia</p>
 
 </div>
 </div>
 </div><aside class="notes">
+# 今回のお話
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 今回のお話</span>
+インシデント・障害事例紹介。
+ということで我々が日常的に遭遇する事案について
+障害はともかくどのような物をインシデントとして取り上げるべきか念のため辞書を引いてみました。
+それがこちら。
 
-<span class="n">インシデント</span><span class="err">・</span><span class="n">障害事例紹介</span><span class="err">。</span>
-<span class="n">ということで我々が日常的に遭遇する事案について</span>
-<span class="n">障害はともかくどのような物をインシデントとして取り上げるべきか念のため辞書を引いてみました</span><span class="err">。</span>
-<span class="n">それがこちら</span><span class="err">。</span>
-
-<span class="n">今回はUSでの経験談としてのインシデント</span><span class="err">・</span><span class="n">障害事例をいくつかご紹介いたします</span><span class="err">。</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
+今回はUSでの経験談としてのインシデント・障害事例をいくつかご紹介いたします。
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13353,48 +13338,35 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# 冒頭
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 冒頭</span>
+アメリカでも日本でも運用エンジニアが行う仕事内容について大きな違いはありません。
+目標・納期に合わせてシステムを作り、滞りなく運用する。
+その為に必要となるプロセスは調達・構築・監視・保守と言った物がありますが
+これらの言葉や概念について説明が必要になることはありません。
 
-<span class="n">アメリカでも日本でも運用エンジニアが行う仕事内容について大きな違いはありません</span><span class="err">。</span>
-<span class="n">目標</span><span class="err">・</span><span class="n">納期に合わせてシステムを作り</span><span class="err">、</span><span class="n">滞りなく運用する</span><span class="err">。</span>
-<span class="n">その為に必要となるプロセスは調達</span><span class="err">・</span><span class="n">構築</span><span class="err">・</span><span class="n">監視</span><span class="err">・</span><span class="n">保守と言った物がありますが</span>
-<span class="n">これらの言葉や概念について説明が必要になることはありません</span><span class="err">。</span>
+では、日本とアメリカで遭遇する事で最も多いケース
+少ないケースとは何でしょうか。それがこちらです。
 
-<span class="n">では</span><span class="err">、</span><span class="n">日本とアメリカで遭遇する事で最も多いケース</span>
-<span class="n">少ないケースとは何でしょうか</span><span class="err">。</span><span class="n">それがこちらです</span><span class="err">。</span>
+## 遭遇する最も多いケース
 
-<span class="c1">## 遭遇する最も多いケース</span>
-
-<span class="o">-</span> <span class="n">調達</span><span class="err">・</span><span class="n">納品</span><span class="o">/</span><span class="n">日時調整</span>
-  <span class="o">-</span> <span class="n">アメリカは個人主義</span><span class="err">、</span><span class="n">職務分掌が明確</span><span class="err">、</span><span class="n">とも言いますが</span>
-　　<span class="n">個人の責任範囲とそれ以外の範囲について明確に態度</span><span class="err">・</span><span class="n">対応が異なります</span><span class="err">。</span>
-　　<span class="n">従って</span><span class="err">、</span><span class="n">納品</span><span class="err">・</span><span class="n">作業日時</span><span class="err">・</span><span class="n">内容については企業担当者では無く</span>
-    <span class="n">当事者との間で明確に意思疎通ができていないと命取りになります</span><span class="err">。</span>
-    <span class="n">こちらは具体的な事例をともにご紹介いたします</span><span class="err">。</span>
+- 調達・納品/日時調整
+  - アメリカは個人主義、職務分掌が明確、とも言いますが
+　　個人の責任範囲とそれ以外の範囲について明確に態度・対応が異なります。
+　　従って、納品・作業日時・内容については企業担当者では無く
+    当事者との間で明確に意思疎通ができていないと命取りになります。
+    こちらは具体的な事例をともにご紹介いたします。
 
 
-<span class="c1">## 遭遇する最も少ないケース</span>
+## 遭遇する最も少ないケース
 
-<span class="n">逆に言えば</span><span class="err">、</span><span class="n">意思決定の待ち時間が長い</span><span class="err">。</span><span class="n">ということは殆どありません</span><span class="err">。</span>
-<span class="n">それぞれの担当が自分の範囲に対して権限を持っているため即答ができるのがアメリカのよいところです</span><span class="err">。</span>
-<span class="n">ただし</span><span class="err">、「</span><span class="n">俺にはわからない</span><span class="err">。</span><span class="n">上位エンジニアにエスカレーションしろ</span><span class="err">」</span>
-<span class="n">というようにすぐに</span><span class="err">「</span><span class="n">No</span><span class="err">」</span><span class="n">というのも特徴の一つ</span><span class="err">。</span>
-<span class="n">従って</span><span class="err">、</span><span class="n">待機についても明確に指示を出さないと</span>
-<span class="n">気づいたら作業に来ていたはずのエンジニアが業務完了前に帰ってしまう事すらあります</span><span class="err">。</span>
+逆に言えば、意思決定の待ち時間が長い。ということは殆どありません。
+それぞれの担当が自分の範囲に対して権限を持っているため即答ができるのがアメリカのよいところです。
+ただし、「俺にはわからない。上位エンジニアにエスカレーションしろ」
+というようにすぐに「No」というのも特徴の一つ。
+従って、待機についても明確に指示を出さないと
+気づいたら作業に来ていたはずのエンジニアが業務完了前に帰ってしまう事すらあります。
     
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13419,39 +13391,26 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# インシデント例1
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># インシデント例1</span>
+では、具体例を見てみましょう。
+時間通りに人・物が来ない。は日常茶飯事なので
+現場作業は常に緊張を強いられます。
 
-<span class="n">では</span><span class="err">、</span><span class="n">具体例を見てみましょう</span><span class="err">。</span>
-<span class="n">時間通りに人</span><span class="err">・</span><span class="n">物が来ない</span><span class="err">。</span><span class="n">は日常茶飯事なので</span>
-<span class="n">現場作業は常に緊張を強いられます</span><span class="err">。</span>
+今回ご紹介する最も緊張したケースは
+シアトルへ出張した時の話です。
+我々はシアトルにもデータセンタを置き、バックボーン設備を有しているのですが
+シアトルにはオフィスが無いため、作業の際は出張作業となります。
+また、この時はリプレース作業を予定していた為、日本からも出張者が来て行う共同作業でした。
 
-<span class="n">今回ご紹介する最も緊張したケースは</span>
-<span class="n">シアトルへ出張した時の話です</span><span class="err">。</span>
-<span class="n">我々はシアトルにもデータセンタを置き</span><span class="err">、</span><span class="n">バックボーン設備を有しているのですが</span>
-<span class="n">シアトルにはオフィスが無いため</span><span class="err">、</span><span class="n">作業の際は出張作業となります</span><span class="err">。</span>
-<span class="n">また</span><span class="err">、</span><span class="n">この時はリプレース作業を予定していた為</span><span class="err">、</span><span class="n">日本からも出張者が来て行う共同作業でした</span><span class="err">。</span>
-
-<span class="err">・・・</span><span class="n">が</span><span class="err">、</span><span class="n">そのリプレース時に必要となるケーブルの収容変更を依頼した</span>
-<span class="n">データセンタエンジニアの作業日確定</span><span class="err">（</span><span class="n">確約が</span><span class="err">）</span><span class="n">いつまで経っても来ません</span><span class="err">。</span>
-<span class="n">アカウント担当とは定期的に打ち合わせを行っていることもあり</span>
-<span class="mi">1</span><span class="n">ヶ月以上前から予定を伝えているのにこのような有様</span><span class="err">。</span>
-<span class="n">月曜作業だというのに前週の金曜でも連絡が来ないということで</span>
-<span class="n">日本からの出張組には出張申請はおろかキャンセル通知すら危ぶまれる状況でした</span><span class="err">。</span>
-<span class="n">幸い</span><span class="err">、</span><span class="n">土曜日に確定の回答が返ってきたので事なきを得ましたが</span>
-<span class="n">言い換えれば土曜日にも関わらず連絡を取り続けなければならない</span><span class="err">、</span><span class="n">という事態だったという事になります</span><span class="err">。</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
+・・・が、そのリプレース時に必要となるケーブルの収容変更を依頼した
+データセンタエンジニアの作業日確定（確約が）いつまで経っても来ません。
+アカウント担当とは定期的に打ち合わせを行っていることもあり
+1ヶ月以上前から予定を伝えているのにこのような有様。
+月曜作業だというのに前週の金曜でも連絡が来ないということで
+日本からの出張組には出張申請はおろかキャンセル通知すら危ぶまれる状況でした。
+幸い、土曜日に確定の回答が返ってきたので事なきを得ましたが
+言い換えれば土曜日にも関わらず連絡を取り続けなければならない、という事態だったという事になります。
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13473,59 +13432,24 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# インシデント例2
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># インシデント例2</span>
+こちらは設定漏れ・設定ミスのケース。
+こちらもUSでは日常茶飯事です。
+回線開通調整で「工事完了」という連絡が来たからといって
+それだけで信用することは決してできません。
 
-<span class="n">こちらは設定漏れ</span><span class="err">・</span><span class="n">設定ミスのケース</span><span class="err">。</span>
-<span class="n">こちらもUSでは日常茶飯事です</span><span class="err">。</span>
-<span class="n">回線開通調整で</span><span class="err">「</span><span class="n">工事完了</span><span class="err">」</span><span class="n">という連絡が来たからといって</span>
-<span class="n">それだけで信用することは決してできません</span><span class="err">。</span>
+工事完了といいながら光すら来ていないこともあります。
+曰く「相手が繋がっていないから確認できなかった」ハードループを作って
+自分の担当範囲は万全だ、という確証を得てから工事完了する、という文化はありません。
+彼らの言う「工事完了」とは「工事完了したから確認してくれ、何か問題があったら連絡をくれ。即座に直すから」です。
+従って、Tx/Rxが逆、ということも日常茶飯事。
+VLAN IDが異なることで光は来ているが通信ができない、ということも日常的に発生します。
 
-<span class="n">工事完了といいながら光すら来ていないこともあります</span><span class="err">。</span>
-<span class="n">曰く</span><span class="err">「</span><span class="n">相手が繋がっていないから確認できなかった</span><span class="err">」</span><span class="n">ハードループを作って</span>
-<span class="n">自分の担当範囲は万全だ</span><span class="err">、</span><span class="n">という確証を得てから工事完了する</span><span class="err">、</span><span class="n">という文化はありません</span><span class="err">。</span>
-<span class="n">彼らの言う</span><span class="err">「</span><span class="n">工事完了</span><span class="err">」</span><span class="n">とは</span><span class="err">「</span><span class="n">工事完了したから確認してくれ</span><span class="err">、</span><span class="n">何か問題があったら連絡をくれ</span><span class="err">。</span><span class="n">即座に直すから</span><span class="err">」</span><span class="n">です</span><span class="err">。</span>
-<span class="n">従って</span><span class="err">、</span><span class="n">Tx</span><span class="o">/</span><span class="n">Rxが逆</span><span class="err">、</span><span class="n">ということも日常茶飯事</span><span class="err">。</span>
-<span class="n">VLAN</span> <span class="n">IDが異なることで光は来ているが通信ができない</span><span class="err">、</span><span class="n">ということも日常的に発生します</span><span class="err">。</span>
-
-<span class="n">この時の連絡は</span><span class="err">「</span><span class="n">光が来ていない</span><span class="err">・</span><span class="n">通信ができない</span><span class="err">」</span><span class="n">では通じず</span>
-<span class="err">「</span><span class="n">この地点でハードループを作ってくれ</span><span class="err">、</span><span class="n">こちらはここまでハードループを作って正常であることを確認している</span><span class="err">」</span><span class="n">と伝えたり</span>
-<span class="err">「</span><span class="n">こちらが要求しているVLAND</span> <span class="n">IDはxxだ</span><span class="err">。</span><span class="n">そちらは同じようになっているか</span><span class="err">？」</span><span class="n">と聞く必要があります</span><span class="err">。</span>
-<span class="n">先に情報をくれる</span><span class="err">、</span><span class="n">というケースも非常に少ないのです</span><span class="err">。</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-1-67ffaed3b27d&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">3</span>
-<span class="ansi-red-fg">    こちらは設定漏れ・設定ミスのケース。</span>
-                     ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid character in identifier
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
+この時の連絡は「光が来ていない・通信ができない」では通じず
+「この地点でハードループを作ってくれ、こちらはここまでハードループを作って正常であることを確認している」と伝えたり
+「こちらが要求しているVLAND IDはxxだ。そちらは同じようになっているか？」と聞く必要があります。
+先に情報をくれる、というケースも非常に少ないのです。
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13538,7 +13462,7 @@ a.anchor-link {
 <p><img src="https://1.bp.blogspot.com/-t7G_QwmamCs/V8jqb79GoNI/AAAAAAAA9fc/wFf8p0mENC4O5sccEL5hpSNyPDsTG--GgCLcB/s180-c/kouji_tokkankouji.png" width="50%" height="50%"/></p>
         </td>
         <td>
-<p><img src="https://www.suttlesolutions.com/catalog/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/6/2/625A28NKxx_6.jpg"  width="25%" height="25%"/></p>
+<p><img src="https://www.suttlesolutions.com/catalog/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/6/2/625A28NKxx_6.jpg"  width="20%" height="20%"/></p>
         </td>
 </tr>
 </table><h4 id="&#23550;&#31574;&#26696;">&#23550;&#31574;&#26696;<a class="anchor-link" href="#&#23550;&#31574;&#26696;">&#182;</a></h4><p>自分ならばどうするか？という作業内容を具体的に把握しておく/立ち会う/作業員・アカウント担当の連絡先を確保しておく</p>
@@ -13546,57 +13470,22 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# 障害事例1
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 障害事例1</span>
+続いて実際にそれらが障害に結びついたケースです。
+回線開通作業をした時のこと。USでは未だT1回線を使われているケースが多く存在します。
+従ってかなり低いレイヤでの問題も数多く発生。
+今回ご紹介する事例はレイヤ1の配線工事で発生しました。
 
-<span class="n">続いて実際にそれらが障害に結びついたケースです</span><span class="err">。</span>
-<span class="n">回線開通作業をした時のこと</span><span class="err">。</span><span class="n">USでは未だT1回線を使われているケースが多く存在します</span><span class="err">。</span>
-<span class="n">従ってかなり低いレイヤでの問題も数多く発生</span><span class="err">。</span>
-<span class="n">今回ご紹介する事例はレイヤ1の配線工事で発生しました</span><span class="err">。</span>
+新たにT1回線を追加するということで工事が完了したというから現地に赴いたところ
+疎通はおろかリンクアップすらしない。加えて同一フロアの顧客からはIP電話が不通になったとの連絡。
 
-<span class="n">新たにT1回線を追加するということで工事が完了したというから現地に赴いたところ</span>
-<span class="n">疎通はおろかリンクアップすらしない</span><span class="err">。</span><span class="n">加えて同一フロアの顧客からはIP電話が不通になったとの連絡</span><span class="err">。</span>
+なぜかと思って切り分け作業を行った結果わかったことは混線によるものでした。
+T1回線は、RJ48のUTPケーブルを利用するのですが100M Ether同様、8本あるケーブルのうち4本しか通信には使用しません。
+RJ45/RJ48といったJackで受けるのが通常の我々は意識することが殆どありませんが
+ビルの配電盤は1本1本をネジ止めして固定するため、4本しか作業をしない事が殆どです。
 
-<span class="n">なぜかと思って切り分け作業を行った結果わかったことは混線によるものでした</span><span class="err">。</span>
-<span class="n">T1回線は</span><span class="err">、</span><span class="n">RJ48のUTPケーブルを利用するのですが100M</span> <span class="n">Ether同様</span><span class="err">、</span><span class="mi">8</span><span class="n">本あるケーブルのうち4本しか通信には使用しません</span><span class="err">。</span>
-<span class="n">RJ45</span><span class="o">/</span><span class="n">RJ48といったJackで受けるのが通常の我々は意識することが殆どありませんが</span>
-<span class="n">ビルの配電盤は1本1本をネジ止めして固定するため</span><span class="err">、</span><span class="mi">4</span><span class="n">本しか作業をしない事が殆どです</span><span class="err">。</span>
-
-<span class="n">従って今回はこの4本が</span><span class="err">、</span><span class="n">既存のT1回線の</span><span class="err">”</span><span class="n">使われていない方の4本</span><span class="err">”</span><span class="n">に繋げてしまったために発生しました</span><span class="err">。</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-2-b1503a294796&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">3</span>
-<span class="ansi-red-fg">    続いて実際にそれらが障害に結びついたケースです。</span>
-                           ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid character in identifier
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
+従って今回はこの4本が、既存のT1回線の”使われていない方の4本”に繋げてしまったために発生しました。
 </aside>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13617,27 +13506,16 @@ a.anchor-link {
 </div>
 </div>
 </div><aside class="notes">
+# 障害事例2
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 障害事例2</span>
+続いての障害事例は言葉としてはよく聞くファイバーカット。
+リプレースだと言っていざPPからケーブルを引き抜いた途端に
+アラートが発生し、連絡を受けたところ「通信が止まった」との事。
 
-<span class="n">続いての障害事例は言葉としてはよく聞くファイバーカット</span><span class="err">。</span>
-<span class="n">リプレースだと言っていざPPからケーブルを引き抜いた途端に</span>
-<span class="n">アラートが発生し</span><span class="err">、</span><span class="n">連絡を受けたところ</span><span class="err">「</span><span class="n">通信が止まった</span><span class="err">」</span><span class="n">との事</span><span class="err">。</span>
+解体対象だと思ってケーブル撤去を始めたら実はまだ通信が残っていた
+というケースです。
 
-<span class="n">解体対象だと思ってケーブル撤去を始めたら実はまだ通信が残っていた</span>
-<span class="n">というケースです</span><span class="err">。</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
 </aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13678,10 +13556,13 @@ a.anchor-link {
 </ul>
 <ul>
 <li>待ち合わせの3時間以上早く来る「今どこだ？」連絡<ul>
-<li>前の仕事が早く終わったんだ。もう現地に居るけどおまえはどこに居るんだ？</li>
+<li>前の仕事が早く終わったんだ。もう現地に居るけどおまえはどこに居るんだ？<ul>
 <li>オフィスに決まってるだろ・・・<ul>
 <li>そうか！早く来れないか！？</li>
-<li>時間を守れ・・・　（もちろん、遅刻も同じような理由で発生する）</li>
+<li>時間を守れ・・・</li>
+<li>もちろん、遅刻も同じような理由で発生する</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -13703,8 +13584,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/head.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/js/reveal.js"
+      "eveal-prefix/lib/js/head.min.js",
+      "eveal-prefix/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13719,9 +13600,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/classList.js",
+                { src: "eveal-prefix/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/notes/notes.js",
+                { src: "eveal-prefix/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
